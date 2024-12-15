@@ -1,0 +1,1845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>497</width>
+    <height>305</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(1,31,75);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>481</width>
+      <height>305</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>481</width>
+      <height>300</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1000</width>
+      <height>500</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page_1">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QGroupBox" name="group_cable">
+        <property name="minimumSize">
+         <size>
+          <width>429</width>
+          <height>67</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>500</width>
+          <height>67</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox{
+	color: rgb(255, 255, 255);
+}</string>
+        </property>
+        <property name="title">
+         <string>Cable file</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLineEdit" name="cable_filename">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>328</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+	background-color: rgb(179,205,224);
+	color: rgb(0, 0, 0);
+	border-radius: 1px
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="cable_browsefile_button">
+           <property name="minimumSize">
+            <size>
+             <width>75</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>75</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	background-color: rgb(0,91,150);
+	color: rgb(255, 255, 255);
+	border-radius:4px;
+}
+
+QPushButton::hover{
+	background-color: rgb(0, 123, 199);
+}
+
+QPushButton::pressed{
+	border: 2px solid #b3cde0;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Browse</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="group_board_a">
+        <property name="minimumSize">
+         <size>
+          <width>429</width>
+          <height>131</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>500</width>
+          <height>201</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox{
+	color: rgb(255, 255, 255);
+}</string>
+        </property>
+        <property name="title">
+         <string>Involved Board Netlist</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QFrame" name="frame">
+           <property name="minimumSize">
+            <size>
+             <width>410</width>
+             <height>71</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>500</width>
+             <height>137</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QLineEdit" name="board_a_filename">
+              <property name="maximumSize">
+               <size>
+                <width>328</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+	background-color: rgb(179,205,224);
+	color: rgb(0, 0, 0);
+	border-radius: 1px
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="board_a_confirm_button">
+              <property name="minimumSize">
+               <size>
+                <width>75</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>75</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: rgb(0,91,150);
+	color: rgb(255, 255, 255);
+	border-radius:4px;
+}
+
+QPushButton::hover{
+	background-color: rgb(0, 123, 199);
+}
+
+QPushButton::pressed{
+	border: 2px solid #b3cde0;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Browse</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLineEdit" name="board_b_filename">
+              <property name="maximumSize">
+               <size>
+                <width>328</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+	background-color: rgb(179,205,224);
+	color: rgb(0, 0, 0);
+	border-radius: 1px
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QPushButton" name="board_b_confirm_button">
+              <property name="minimumSize">
+               <size>
+                <width>75</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>75</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: rgb(0,91,150);
+	color: rgb(255, 255, 255);
+	border-radius:4px;
+}
+
+QPushButton::hover{
+	background-color: rgb(0, 123, 199);
+}
+
+QPushButton::pressed{
+	border: 2px solid #b3cde0;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Browse</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLineEdit" name="board_c_filename">
+              <property name="maximumSize">
+               <size>
+                <width>328</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+	background-color: rgb(179,205,224);
+	color: rgb(0, 0, 0);
+	border-radius: 1px
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QPushButton" name="board_c_confirm_button">
+              <property name="minimumSize">
+               <size>
+                <width>75</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>75</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: rgb(0,91,150);
+	color: rgb(255, 255, 255);
+	border-radius:4px;
+}
+
+QPushButton::hover{
+	background-color: rgb(0, 123, 199);
+}
+
+QPushButton::pressed{
+	border: 2px solid #b3cde0;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Browse</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLineEdit" name="board_d_filename">
+              <property name="maximumSize">
+               <size>
+                <width>328</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+	background-color: rgb(179,205,224);
+	color: rgb(0, 0, 0);
+	border-radius: 1px
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QPushButton" name="board_d_confirm_button">
+              <property name="minimumSize">
+               <size>
+                <width>75</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>75</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	background-color: rgb(0,91,150);
+	color: rgb(255, 255, 255);
+	border-radius:4px;
+}
+
+QPushButton::hover{
+	background-color: rgb(0, 123, 199);
+}
+
+QPushButton::pressed{
+	border: 2px solid #b3cde0;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Browse</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_confirm">
+        <property name="maximumSize">
+         <size>
+          <width>500</width>
+          <height>67</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>328</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="next_button">
+           <property name="minimumSize">
+            <size>
+             <width>75</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>75</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	background-color: rgb(0,91,150);
+	color: rgb(255, 255, 255);
+	border-radius:4px;
+}
+
+QPushButton::hover{
+	background-color: rgb(0, 123, 199);
+}
+
+QPushButton::pressed{
+	border: 2px solid #b3cde0;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Next</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="page_3_port">
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QFrame" name="p1_frame_3_port">
+        <property name="styleSheet">
+         <string notr="true">QFrame{
+	
+	background-color: rgb(3,57,108);
+	color: rgb(220, 220, 220);
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="label">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>16</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>&lt;strong&gt;P1&lt;/strong&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="p1_board_comboBox_3_port">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox{
+	background-color: rgb(179,205,224);
+	border: 1px solid #ced4da;
+	border-radius: 2px;
+	padding-left: 5px;
+}
+
+QComboBox:on{
+	border:2px solid #c2dbfe
+}
+
+QComboBox QListView{
+	
+	
+	color: #fff;
+	font-size:12px;
+	border:1px solid rgba(0, 0, 0, 10%);
+	padding: 5px;
+	background-color: #b3cde0;
+	outline: 10px;
+}
+
+
+</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLineEdit" name="p1_lineEdit_3_port">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+	background-color: rgb(179,205,224);
+	border-radius: 2px;
+	padding: 3px;
+}
+
+QLineEdit::focus{
+	border: 2px solid white;
+	
+	background-color: rgb(222, 222, 222);
+}
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="p2_frame_3_port">
+        <property name="styleSheet">
+         <string notr="true">QFrame{
+	background-color: rgb(3,57,108);
+	color: rgb(220, 220, 220);
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>16</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>&lt;strong&gt;P2&lt;/strong&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="p2_board_comboBox_3_port">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox{
+	background-color: rgb(179,205,224);
+	border: 1px solid #ced4da;
+	border-radius: 2px;
+	padding-left: 5px;
+}
+
+QComboBox:on{
+	border:2px solid #c2dbfe
+}
+
+QComboBox QListView{
+	
+	
+	color: #fff;
+	font-size:12px;
+	border:1px solid rgba(0, 0, 0, 10%);
+	padding: 5px;
+	background-color: #b3cde0;
+	outline: 10px;
+}
+
+
+</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLineEdit" name="p2_lineEdit_3_port">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+	background-color: rgb(179,205,224);
+	border-radius: 2px;
+	padding: 3px;
+}
+
+QLineEdit::focus{
+	border: 2px solid white;
+	
+	background-color: rgb(222, 222, 222);
+}
+</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="p3_frame_3_port">
+        <property name="styleSheet">
+         <string notr="true">QFrame{
+	background-color: rgb(3,57,108);
+	color: rgb(220, 220, 220);
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="label_3">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>16</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>&lt;strong&gt;P3&lt;/strong&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="p3_board_comboBox_3_port">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox{
+	background-color: rgb(179,205,224);
+	border: 1px solid #ced4da;
+	border-radius: 2px;
+	padding-left: 5px;
+}
+
+QComboBox:on{
+	border:2px solid #c2dbfe
+}
+
+QComboBox QListView{
+	
+	
+	color: #fff;
+	font-size:12px;
+	border:1px solid rgba(0, 0, 0, 10%);
+	padding: 5px;
+	background-color: #b3cde0;
+	outline: 10px;
+}
+
+
+</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLineEdit" name="p3_lineEdit_3_port">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+	background-color: rgb(179,205,224);
+	border-radius: 2px;
+	padding: 3px;
+}
+
+QLineEdit::focus{
+	border: 2px solid white;
+	
+	background-color: rgb(222, 222, 222);
+}
+</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_2">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item alignment="Qt::AlignLeft">
+          <widget class="QPushButton" name="previous_button_3_port">
+           <property name="minimumSize">
+            <size>
+             <width>75</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	background-color: rgb(0,91,150);
+	color: rgb(255, 255, 255);
+	border-radius:4px;
+}
+
+QPushButton::hover{
+	background-color: rgb(0, 123, 199);
+}
+
+QPushButton::pressed{
+	border: 2px solid #b3cde0;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Previous</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignRight">
+          <widget class="QPushButton" name="confirm_button_3_port">
+           <property name="minimumSize">
+            <size>
+             <width>75</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	background-color: rgb(0,91,150);
+	color: rgb(255, 255, 255);
+	border-radius:4px;
+}
+
+QPushButton::hover{
+	background-color: rgb(0, 123, 199);
+}
+
+QPushButton::pressed{
+	border: 2px solid #b3cde0;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Confirm</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="page_2_port">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QFrame" name="frame_6">
+        <property name="styleSheet">
+         <string notr="true">QFrame{
+	
+	background-color: rgb(3,57,108);
+	color: rgb(220, 220, 220);
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_10">
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="label_4">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>16</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>P1</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="p1_board_comboBox_2_port">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox{
+	background-color: rgb(179,205,224);
+	border: 1px solid #ced4da;
+	border-radius: 2px;
+	padding-left: 5px;
+}
+
+QComboBox:on{
+	border:2px solid #c2dbfe
+}
+
+QComboBox QListView{
+	
+	
+	color: #fff;
+	font-size:12px;
+	border:1px solid rgba(0, 0, 0, 10%);
+	padding: 5px;
+	background-color: #b3cde0;
+	outline: 10px;
+}
+
+
+</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLineEdit" name="p1_lineEdit_2_port">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+	background-color: rgb(179,205,224);
+	border-radius: 2px;
+	padding: 3px;
+}
+
+QLineEdit::focus{
+	border: 2px solid white;
+	
+	background-color: rgb(222, 222, 222);
+}
+</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_3">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame{
+	
+	background-color: rgb(3,57,108);
+	color: rgb(220, 220, 220);
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_11">
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="label_5">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>16</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>P2</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="p2_board_comboBox_2_port">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox{
+	background-color: rgb(179,205,224);
+	border: 1px solid #ced4da;
+	border-radius: 2px;
+	padding-left: 5px;
+}
+
+QComboBox:on{
+	border:2px solid #c2dbfe
+}
+
+QComboBox QListView{
+	
+	
+	color: #fff;
+	font-size:12px;
+	border:1px solid rgba(0, 0, 0, 10%);
+	padding: 5px;
+	background-color: #b3cde0;
+	outline: 10px;
+}
+
+
+</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLineEdit" name="p2_lineEdit_2_port">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+	background-color: rgb(179,205,224);
+	border-radius: 2px;
+	padding: 3px;
+}
+
+QLineEdit::focus{
+	border: 2px solid white;
+	
+	background-color: rgb(222, 222, 222);
+}
+</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_8">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_7">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_12">
+         <item alignment="Qt::AlignLeft">
+          <widget class="QPushButton" name="previous_button_2_port">
+           <property name="minimumSize">
+            <size>
+             <width>75</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	background-color: rgb(0,91,150);
+	color: rgb(255, 255, 255);
+	border-radius:4px;
+}
+
+QPushButton::hover{
+	background-color: rgb(0, 123, 199);
+}
+
+QPushButton::pressed{
+	border: 2px solid #b3cde0;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Previous</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignRight">
+          <widget class="QPushButton" name="confirm_button_2_port">
+           <property name="minimumSize">
+            <size>
+             <width>75</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	background-color: rgb(0,91,150);
+	color: rgb(255, 255, 255);
+	border-radius:4px;
+}
+
+QPushButton::hover{
+	background-color: rgb(0, 123, 199);
+}
+
+QPushButton::pressed{
+	border: 2px solid #b3cde0;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Confirm</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="page_4_port">
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <widget class="QFrame" name="p1_frame_3_port_4">
+        <property name="styleSheet">
+         <string notr="true">QFrame{
+	
+	background-color: rgb(3,57,108);
+	color: rgb(220, 220, 220);
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_14">
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="label_6">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>16</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>&lt;strong&gt;P1&lt;/strong&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="p1_board_comboBox_4_port">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox{
+	background-color: rgb(179,205,224);
+	border: 1px solid #ced4da;
+	border-radius: 2px;
+	padding-left: 5px;
+}
+
+QComboBox:on{
+	border:2px solid #c2dbfe
+}
+
+QComboBox QListView{
+	
+	
+	color: #fff;
+	font-size:12px;
+	border:1px solid rgba(0, 0, 0, 10%);
+	padding: 5px;
+	background-color: #b3cde0;
+	outline: 10px;
+}
+
+
+</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLineEdit" name="p1_lineEdit_4_port">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+	background-color: rgb(179,205,224);
+	border-radius: 2px;
+	padding: 3px;
+}
+
+QLineEdit::focus{
+	border: 2px solid white;
+	
+	background-color: rgb(222, 222, 222);
+}
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="p2_frame_port_4">
+        <property name="styleSheet">
+         <string notr="true">QFrame{
+	background-color: rgb(3,57,108);
+	color: rgb(220, 220, 220);
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_15">
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="label_7">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>16</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>&lt;strong&gt;P2&lt;/strong&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="p2_board_comboBox_4_port">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox{
+	background-color: rgb(179,205,224);
+	border: 1px solid #ced4da;
+	border-radius: 2px;
+	padding-left: 5px;
+}
+
+QComboBox:on{
+	border:2px solid #c2dbfe
+}
+
+QComboBox QListView{
+	
+	
+	color: #fff;
+	font-size:12px;
+	border:1px solid rgba(0, 0, 0, 10%);
+	padding: 5px;
+	background-color: #b3cde0;
+	outline: 10px;
+}
+
+
+</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLineEdit" name="p2_lineEdit_4_port">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+	background-color: rgb(179,205,224);
+	border-radius: 2px;
+	padding: 3px;
+}
+
+QLineEdit::focus{
+	border: 2px solid white;
+	
+	background-color: rgb(222, 222, 222);
+}
+</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="p3_frame_port_4">
+        <property name="styleSheet">
+         <string notr="true">QFrame{
+	background-color: rgb(3,57,108);
+	color: rgb(220, 220, 220);
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_16">
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="label_8">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>16</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>&lt;strong&gt;P3&lt;/strong&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="p3_board_comboBox_4_port">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox{
+	background-color: rgb(179,205,224);
+	border: 1px solid #ced4da;
+	border-radius: 2px;
+	padding-left: 5px;
+}
+
+QComboBox:on{
+	border:2px solid #c2dbfe
+}
+
+QComboBox QListView{
+	
+	
+	color: #fff;
+	font-size:12px;
+	border:1px solid rgba(0, 0, 0, 10%);
+	padding: 5px;
+	background-color: #b3cde0;
+	outline: 10px;
+}
+
+
+</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLineEdit" name="p3_lineEdit_4_port">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+	background-color: rgb(179,205,224);
+	border-radius: 2px;
+	padding: 3px;
+}
+
+QLineEdit::focus{
+	border: 2px solid white;
+	
+	background-color: rgb(222, 222, 222);
+}
+</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="p4_frame_port_4">
+        <property name="styleSheet">
+         <string notr="true">QFrame{
+	background-color: rgb(3,57,108);
+	color: rgb(220, 220, 220);
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_17">
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="label_9">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>16</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;P4&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="p4_board_comboBox_4_port">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox{
+	background-color: rgb(179,205,224);
+	border: 1px solid #ced4da;
+	border-radius: 2px;
+	padding-left: 5px;
+}
+
+QComboBox:on{
+	border:2px solid #c2dbfe
+}
+
+QComboBox QListView{
+	
+	
+	color: #fff;
+	font-size:12px;
+	border:1px solid rgba(0, 0, 0, 10%);
+	padding: 5px;
+	background-color: #b3cde0;
+	outline: 10px;
+}
+
+
+</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLineEdit" name="p4_lineEdit_4_port">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+	background-color: rgb(179,205,224);
+	border-radius: 2px;
+	padding: 3px;
+}
+
+QLineEdit::focus{
+	border: 2px solid white;
+	
+	background-color: rgb(222, 222, 222);
+}
+</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_4">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_13">
+         <item alignment="Qt::AlignLeft">
+          <widget class="QPushButton" name="previous_button_4_port">
+           <property name="minimumSize">
+            <size>
+             <width>75</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	background-color: rgb(0,91,150);
+	color: rgb(255, 255, 255);
+	border-radius:4px;
+}
+
+QPushButton::hover{
+	background-color: rgb(0, 123, 199);
+}
+
+QPushButton::pressed{
+	border: 2px solid #b3cde0;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Previous</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignRight">
+          <widget class="QPushButton" name="confirm_button_4_port">
+           <property name="minimumSize">
+            <size>
+             <width>75</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	background-color: rgb(0,91,150);
+	color: rgb(255, 255, 255);
+	border-radius:4px;
+}
+
+QPushButton::hover{
+	background-color: rgb(0, 123, 199);
+}
+
+QPushButton::pressed{
+	border: 2px solid #b3cde0;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Confirm</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
